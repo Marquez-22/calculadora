@@ -1,0 +1,78 @@
+  *{
+    font-family:'Prompt' , sans-serif;
+    color: honeydew;
+
+  }
+
+  body {
+    margin: 0;
+    background-color: rgb(89, 88, 88);
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  .calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);  
+    grid-template-rows:160px repeat(5, 75px);
+    background-color:blueviolet;
+    border-radius: 32px;
+    box-shadow: 15px 10px 2px 9px rgba(0, 0, 0, 0.427);
+    padding: 1rem;
+  }
+   button{
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 32px;
+    font-size: 1.5rem;
+    border: none;
+    background-color:blueviolet;
+    box-shadow:  5px 5px 10px -3px blue , -5px -5px 15px 3px rgba(0, 0, 0, 0.113);
+
+   }
+
+   button:active{
+    background-color: rgb(0, 0, 0,0.125 );
+
+   }
+
+   button:focus{
+    outline: none;
+    
+   }
+
+   .col-2{
+    grid-column: span 2;
+   }
+
+   .display{
+    grid-column: 1/ -1;
+    padding: 16px;
+    display: flex;
+    margin:10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: blue;
+    border-radius: 1rem;
+    text-align: right;
+    box-shadow:0px 3px 10px 0px black;
+    justify-content: space-between;
+    word-break: break-all;
+
+   }
+
+   #valor-actual{
+    font-size: 1rem;
+   }
+
+   #valor-anterior{
+    font-size: 2rem;
+   }
+
+
+  
+   
